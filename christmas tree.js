@@ -6,8 +6,8 @@ Wewnętrzna pętla ma się wykonać zależnie od tego, który wiersz aktualnie d
 Wewnątrz drugiej pętli nadpisz zmienną star i za każdym razem kiedy pętla będzie wykonana, do aktualnej wartości star dodaj kolejną gwiazdkę star += '*';.
 Po opuszczeniu wewnętrznej pętli wyświetl console.log(star).*/
 
-function drawTree () {
-	for (var i=0; i<8; i++) {
+function drawTree (rows) {
+	for (var i=0; i<rows; i++) {
 	 var star='';
 	  for (var j=0; j<=i; j++) {
 	   var star += '*';
@@ -15,3 +15,5 @@ function drawTree () {
 	 console.log(star);
 	}
 }
+
+drawTree(8);
